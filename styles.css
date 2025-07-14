@@ -1,22 +1,64 @@
 body {
-  font-family: sans-serif;
+  margin: 0;
   padding: 20px;
-  background: #f9f9f9;
-}
-h1 {
+  font-family: 'Segoe UI', sans-serif;
+  background: #e0f7fa;
+  color: #004d40;
   text-align: center;
 }
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.contenedor-malla {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
 .semestre {
-  margin: 20px 0;
+  min-width: 220px;
+  background-color: #b2dfdb;
+  border-radius: 10px;
   padding: 15px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.asignatura {
-  margin: 5px 0;
+
+.semestre h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #00695c;
 }
-select {
-  margin-top: 10px;
-  padding: 5px;
+
+button.materia {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #81d4fa;
+  color: #004d40;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.materia:hover:not(:disabled) {
+  background-color: #4fc3f7;
+}
+
+button.realizada {
+  background-color: #66bb6a !important;
+  color: white;
+  text-decoration: line-through;
+}
+
+button.bloqueada {
+  background-color: #ccc !important;
+  cursor: not-allowed;
+  color: #666;
 }
