@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+}
+h1 {
+  text-align: center;
+}
+.semestre {
+  margin: 20px 0;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.asignatura {
+  margin: 5px 0;
+}
+select {
+  margin-top: 10px;
+  padding: 5px;
+}
